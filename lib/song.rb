@@ -1,0 +1,20 @@
+require_relative "artist"
+
+class Song
+
+attr_accessor :artist, :name
+
+  def initialize(name)
+    @name = name
+  end
+
+  def artist_name
+   self.artist ? self.artist.name : nil
+    #result = self.artist
+    #if self.artist.name
+      #  result
+    #else
+    #  nil
+  end
+
+end
